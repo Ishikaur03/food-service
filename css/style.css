@@ -1,0 +1,208 @@
+*{   margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+:root{
+  --navbar-height : 39px;  
+}
+/*navigation bar*/
+#navbar{
+    display: flex;
+    align-items: center;
+    top: 0px;
+    position: sticky;
+}
+#navbar::before{
+    content:"";
+    background-color: rgb(15, 77, 51);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index:-1;
+    opacity: 0.6;
+    top: 0px;
+    left:0px;
+    }
+/*navigation bar:logo*/
+#logo{
+    margin: 0px 0px;
+    height:71px;
+    width: 80px;
+    opacity:20;
+}
+#logo img{
+    height:100%;
+    margin: 0px 0px;
+    opacity:0.4;
+
+}
+/*navigation bar list styling*/
+
+#navbar u1{
+    display: flex;
+    }
+
+#navbar u1 li {
+    font-size:1rem;
+    list-style: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+#navbar u1 li a{
+    display: block;
+    padding: 1px 22px;
+    border-radius: 20px;
+    color:rgba(255, 255, 255, 0.822);
+    text-decoration: none;
+
+}
+#navbar u1 li a:hover{
+       color: rgb(236, 159, 163);
+    background-color: rgb(8, 43, 88);
+
+}
+/*home section*/
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 200px;
+    height: 580px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+        content: "";
+        position: absolute;
+        background: url('../bg1.jpg')no-repeat center center/cover;
+        height: 100%;
+        top:0px;
+        left:0px;
+        width: 100%;
+        z-index: -1;
+        opacity:0.63;
+    }
+
+    /*utility class*/
+    #home h1{
+        color:rgb(105, 15, 15);
+        text-align: center;
+        font-family:'Playfair Display',serif;
+
+    }
+.h-primary{
+    font-size: 3rem;
+    padding: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(24, 107, 73);
+  
+}
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 2px;
+    color:brown;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+    
+#home p{
+    color:rgb(3, 32, 9);
+    text-align: center;
+    font-size: 1.5rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}  
+.bt{
+    padding: 7px 20px;
+    border: 2px solid;
+    background-color:rgba(19, 87, 59, 0.664);
+    color:rgba(233, 229, 222, 0.863);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 30px;  
+    font-size: 1.3rem;
+    border-radius: 15px;
+    cursor: pointer;
+}
+/* Services Section */
+#services{
+    margin: 40px;
+    display: flex;
+    
+}
+#services .box{ 
+    border: 2px solid brown;
+    padding: 25px;
+    margin: 2px 18px;
+    height: 280px;;
+    border-radius: 28px;
+    background:#c5a09496;
+    margin-bottom: 20px;
+}
+
+#services .box img{ 
+   height: 100px;
+   margin: auto;
+   display: block;
+}
+
+#services .box p{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+
+} 
+
+.center{
+    text-align: center;
+}
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    background: url('../1617896474628.jpg') no-repeat center center/cover;
+    color:rgb(150, 221, 159);
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+    
+} 
+
+#contact-box form{
+    width: 30%;
+    color:rgb(150, 221, 159);
+}
+
+#contact-box label{
+   font-size: 1.3rem;
+   color: rgb(199, 149, 149);
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.h-aboutus{
+    font-size: 3rem;
+    padding: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(255, 255, 255);
+
+/*footer{
+    background: black;
+    color:white;
+    padding: 9px 20px;
+}*/
+}
